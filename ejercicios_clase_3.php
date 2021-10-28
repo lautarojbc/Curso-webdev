@@ -152,7 +152,7 @@ function ejercicio7($diamet) {
   if( $diamet > 1.4) {
     echo "La rueda es para un vehiculo grande\n";
   }
-  else if( $diamet < 1.4 ) {
+  else if( $diamet <= 1.4 ) {
     echo "La rueda es para un vehiculo grande\n";
   }
   else 
