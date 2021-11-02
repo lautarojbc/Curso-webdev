@@ -1,6 +1,6 @@
 SELECT nombre as 'Nombre' FROM telefonia.usuario;
-/*  Ejercicio 2 INC*/
-SELECT MAX(saldo) FROM telefonia.usuario WHERE fechaNacimiento < "1992-11-02";
+/*  Ejercicio 2*/
+SELECT MAX(saldo) FROM telefonia.usuario WHERE 30;
 /*Ejercicio 3 */
 SELECT nombre as 'Nombre', telefono as 'Telefono' from telefonia.usuario WHERE marca IN ('NOKIA',' BLACKBERRY','SONY');
 /*Ejercicio 4 */
@@ -8,7 +8,7 @@ SELECT COUNT(usuario) as 'Usuarios inactivos o sin saldo' FROM telefonia.usuario
 /*Ejercicio 5*/
 SELECT telefono as 'Telefono' FROM telefonia.usuario WHERE saldo <= 300;
 /*Ejercico 6 INC*/
-SELECT SUM(saldo) as 'Saldo total de NEXTEL' FROM telefonia.usuario WHERE marca = 'NEXTEL';
+SELECT SUM(saldo) as 'Saldo total de NEXTEL' FROM telefonia.usuario WHERE marca='NEXTEL';
 /*Ejercico 7*/
 SELECT COUNT(id), compa�ia FROM telefonia.usuario GROUP BY(compa�ia);
 /*Ejercico 8*/
