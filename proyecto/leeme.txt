@@ -1,0 +1,7 @@
+el archivo proyecto_finalk contiene la carpeta htdocs del login 
+el archivo data contiene la base de datos que va en xampp/mysql/data/
+
+Puede que necesiten usar estos comandos en la carpeta del htdocs:
+composer require laravel/fortify -> esto instala fortify
+php artisan vendor:publish --provider="Laravel\\Fortify\\FortifyServiceProvider" -> publica los assets
+php artisan migrate -> usa los tokens del login para la bd
